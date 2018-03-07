@@ -1,0 +1,71 @@
+
+    <div class="logo" align="center">
+      <img src="assets/img/img01.jpg" class="img-responsive" height="100%" width="100%">
+    </div>
+    <!-- Header -->
+    <div class="header">
+      <h1>Ultimos Eventos</h1>
+      <p>Participe dos novos eventos!!!</p>
+    </div>
+    <!-- Photo Grid -->
+    <div class="post"> 
+      <div class="column" *ngFor="let item of imgs">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ item.img }}" width="280px" height="230px" class="img-responsive">
+            <span class="card-title">{{item.titulo}}</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Formulario -->
+    <div class="container">
+        <label>Link da Imagem:</label>
+        <input type="text" [(ngModel)] = "task.img" placeholder="Link da Imagem">
+        <br>
+        <label>Titulo da Postagem:</label>
+        <input type="text" [(ngModel)] = "task.titulo" placeholder="Titulo da Postagem">
+        <br>
+        <button type="button" class="waves-effect waves-light btn" (click) ="add()">Envia Post</button>
+    </div>
+
+
+    
+      
+        
+
+
+     
+
+    
+              
+  
+
+ 
+  
+ 
