@@ -3,7 +3,12 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(223, 28, 28);
+    background-color: rgb(255, 255, 255);
+}
+
+.card-title{
+    background-color: rgb(255, 255, 255);
+    text-decoration-color: black;
 }
 
 li {
@@ -32,12 +37,6 @@ li a:hover:not(.active) {
 }
 /*css da grade de img*/
 
-.titulo{
-    
-    background-color: black;
-    width: 280px;
-    text-align: center;
-}
 
 .post {
     display: flex;

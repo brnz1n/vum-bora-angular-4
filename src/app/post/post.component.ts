@@ -12,7 +12,10 @@ export class PostComponent implements OnInit {
   imgs= []; 
   task: formulario = {
     img: "",
-    titulo: ""
+    titulo: "",
+    descricao: "",
+    local: "",
+    horario: ""
   };
 
   add(){

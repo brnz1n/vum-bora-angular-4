@@ -13,35 +13,20 @@
         <div class="card">
           <div class="card-image">
             <img src="{{ item.img }}" width="280px" height="230px" class="img-responsive">
-            <span class="card-title">{{item.titulo}}</span>
+            <span class="card-title" style="color:black"><strong>{{item.titulo}}</strong></span>
             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
           </div>
           <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            <ul>
+              <li>Descrição: {{item.descricao}} </li>
+              <li>Local: {{item.local}}</li>
+              <li>Horario: {{item.horario}}</li>
+              
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Formulario -->
     <div class="container">
@@ -50,6 +35,15 @@
         <br>
         <label>Titulo da Postagem:</label>
         <input type="text" [(ngModel)] = "task.titulo" placeholder="Titulo da Postagem">
+        <br>
+        <label>Descrição do Evento:</label>
+        <input type="text" [(ngModel)] = "task.descricao" placeholder="Descrição do Evento">
+        <br>
+        <label>Local do Evento:</label>
+        <input type="text" [(ngModel)] = "task.local" placeholder="Local do Evento">
+        <br>
+        <label>Horario do Evento:</label>
+        <input type="text" [(ngModel)] = "task.horario" placeholder="Horario do Evento">
         <br>
         <button type="button" class="waves-effect waves-light btn" (click) ="add()">Envia Post</button>
     </div>
