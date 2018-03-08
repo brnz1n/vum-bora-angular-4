@@ -7,7 +7,7 @@ ul {
 }
 
 .card-title{
-    background-color: rgb(255, 255, 255);
+    
     text-decoration-color: black;
 }
 
@@ -31,8 +31,9 @@ li a:hover:not(.active) {
     background-color: rgb(250, 8, 8);
 }
 .header{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 247, 247);
     text-align-last: center;
+    margin-top: -40px;
 
 }
 /*css da grade de img*/
@@ -42,7 +43,6 @@ li a:hover:not(.active) {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding:  80px;
     
 }
 

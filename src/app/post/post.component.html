@@ -1,32 +1,105 @@
-
-    <div class="logo" align="center">
-      <img src="assets/img/img01.jpg" class="img-responsive" height="100%" width="100%">
-    </div>
     <!-- Header -->
     <div class="header">
+      <br><br>
       <h1>Ultimos Eventos</h1>
       <p>Participe dos novos eventos!!!</p>
+      <br><br>
     </div>
+
+    <!-- Grade de img fixa -->
+    <div class="post"> 
+      <!-- Card 1-->
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://i.imgur.com/lclqVOA.jpg" width="280px" height="230px" class="img-responsive">
+              <a routerLink="/descricaoEvento" class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title" style="color:black"><strong>Crazy for Auto</strong></span>
+              <ul>
+                <li>Descrição: Track Day </li><br>
+                <li>Local: Interlagos</li><br>
+                <li>Horario: 7:00 as 17:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2-->
+        <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://i.imgur.com/ybR8oQN.jpg" width="280px" height="230px" class="img-responsive">
+                <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title" style="color:black"><strong>Alan Walker</strong></span>
+                <ul>
+                  <li>Descrição: Electric Brixton </li><br>
+                  <li>Local: London, Reino Unido</li><br>
+                  <li>Horario: 07 março 2018 19:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3-->
+          <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <img src="https://i.imgur.com/UFsFXpm.jpg" width="280px" height="230px" class="img-responsive">
+                  <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title" style="color:black"><strong>XXXPERIENCIA</strong></span>
+                  <ul>
+                    <li>Descrição: Festival </li><br>
+                    <li>Local: ........</li><br>
+                    <li>Horario: 7:00 as 17:00</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4-->
+            <div class="column">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://i.imgur.com/kuVO7XA.jpg" width="280px" height="230px" class="img-responsive">
+                    <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title" style="color:black"><strong>Festival</strong></span>
+                    <ul>
+                      <li>Descrição: Festival </li><br>
+                      <li>Local: ......</li><br>
+                      <li>Horario: 7:00 as 17:00</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+      
+
     <!-- Photo Grid -->
     <div class="post"> 
       <div class="column" *ngFor="let item of imgs">
         <div class="card">
           <div class="card-image">
             <img src="{{ item.img }}" width="280px" height="230px" class="img-responsive">
-            <span class="card-title" style="color:black"><strong>{{item.titulo}}</strong></span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></a>
           </div>
           <div class="card-content">
+            <span class="card-title" style="color:black"><strong>{{item.titulo}}</strong></span>
             <ul>
-              <li>Descrição: {{item.descricao}} </li>
-              <li>Local: {{item.local}}</li>
+              <li>Descrição: {{item.descricao}} </li><br>
+              <li>Local: {{item.local}}</li><br>
               <li>Horario: {{item.horario}}</li>
-              
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </div><br><br><br><br><br>
 
     <!-- Formulario -->
     <div class="container">
@@ -47,19 +120,3 @@
         <br>
         <button type="button" class="waves-effect waves-light btn" (click) ="add()">Envia Post</button>
     </div>
-
-
-    
-      
-        
-
-
-     
-
-    
-              
-  
-
- 
-  
- 
