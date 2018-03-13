@@ -15,6 +15,8 @@ import { AngularFireModule } from 'angularfire2';
 import { PostagemComponent } from './pages/postagem/postagem.component';
 import { PostagemFormComponent } from './pages/postagem/postagem-form/postagem-form.component';
 import { PostagemListComponent } from './pages/postagem/postagem-list/postagem-list.component';
+import { LoginPessoaComponent } from './pages/login-pessoa/login-pessoa.component';
+import { LoginPessoaFormComponent } from './pages/login-pessoa/login-pessoa-form/login-pessoa-form.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { PostagemListComponent } from './pages/postagem/postagem-list/postagem-l
     DescricaoEventoComponent,
     PostagemComponent,
     PostagemFormComponent,
-    PostagemListComponent
+    PostagemListComponent,
+    LoginPessoaComponent,
+    LoginPessoaFormComponent
   ],
   imports: [
     BrowserModule,

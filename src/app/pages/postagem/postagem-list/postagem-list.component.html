@@ -1,19 +1,18 @@
-<div class="post">
-  <div class="column" *ngFor="let v of imgs| async">
-    <div class="card">
-      <div class="card-image">
-          <img src="{{ v.img}}" width="280px" height="230px" class="img-responsive" >
-          <button class="btn-floating halfway-fab waves-effect waves-light red pulse"><i class="material-icons">add</i></button>
-        </div>
-        <div class="card-content">
-          <span class="card-title" style="color:black"><strong>
-            {{ v.titulo}}</strong></span>
-            <ul>
-              <li>Descrição: {{ v.descricao}}</li><br>
-              <li>Local: {{v.local}}</li><br>
-              <li>Horário: {{ v.horario}} </li>
-            </ul>
-        </div>
-    </div> 
-  </div>
-  </div><br><br><br><br><br>
+<h1>
+  Lista de pessoas
+  </h1>
+  <ul>
+    <li *ngFor="let v of imgs| async">
+
+      <img src="{{ v.img}}" alt="">
+      <p>Descriçao</p>
+      {{ v.descricao}}
+      <p>Titulo</p>
+      {{ v.titulo}}
+      <p>Horario</p>
+      {{ v.horario}}
+      <p>Local</p>
+      {{v.local}}
+    </li>
+  </ul>
+  
