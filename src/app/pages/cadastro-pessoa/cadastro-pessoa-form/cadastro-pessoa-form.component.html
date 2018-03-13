@@ -1,0 +1,43 @@
+<div class="container" align="center">
+
+    <div class="container" style="width: 600px">
+        <h3>Cadastra-se no Vum Bora e Aproveite todos os Eventos !!!</h3>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="z-depth-5" style="width: 400px">
+        <br>
+        <h3>Cadastro</h3>
+        <br>
+        <form #f="ngForm" (submit)="form_submit(f)" style="width:300px">
+            <!--Nome-->
+            <input type="text" ngModel name="nome" placeholder="Nome">
+            <!--Sobrenome-->
+            <input type="text" ngModel name="sobrenome" placeholder="Sobrenome">
+            <!--Email-->
+            <input type="text" ngModel name="email" placeholder="Email">
+            <!--Senha-->
+            <input type="password" ngModel name="senha" placeholder="Senha">
+            <!--Cidade-->
+            <select class="browser-default col s6" ngModel name="cidade">
+                <option value="" disabled selected>Cidades</option>
+                <option value="Campina Grande-PB">Campina Grande-PB</option>
+                <option value="João Pessoa-PB">João Pessoa-PB</option>
+                <option value="QueBimadas-PB">Queimadas-PB</option>
+            </select>
+            <br>
+            <br>
+            <!--Enviar-->
+            <button (click)="botaoClicado()" class="btn waves-effect waves-light" type="submit" name="action" >Cadastrar
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+        <br>
+        <br>
+    </div>
+
+
+
+</div>

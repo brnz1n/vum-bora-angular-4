@@ -1,0 +1,35 @@
+<div class="container" align="center">
+
+  <br>
+  <br>
+
+  <div class="z-depth-5" style="width: 400px">
+      <br>
+      <h3>Cadastro de Postagem</h3>
+      <br>
+      <form #f="ngForm" (submit)="form_submit(f)" style="width:300px">
+          <!--Nome-->
+          <input type="text" ngModel name="img" placeholder="Link da Imagem">
+          <!--Sobrenome-->
+          <input type="text" ngModel name="titulo" placeholder="Titulo">
+          <!--Email-->
+          <input type="text" ngModel name="descricao" placeholder="descricao">
+          <!--Senha-->
+          <input type="text" ngModel name="horario" placeholder="Horario">
+
+          <input type="text" ngModel name="local" placeholder="local">
+          
+          <br>
+          <br>
+          <!--Enviar-->
+          <button (click)="botaoClicado()" class="btn waves-effect waves-light" type="submit" name="action" >Cadastrar
+              <i class="material-icons right">send</i>
+          </button>
+      </form>
+      <br>
+      <br>
+  </div>
+
+
+
+</div>

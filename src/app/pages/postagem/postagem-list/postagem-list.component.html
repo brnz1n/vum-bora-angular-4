@@ -1,0 +1,18 @@
+<h1>
+  Lista de pessoas
+  </h1>
+  <ul>
+    <li *ngFor="let v of imgs| async">
+
+      <img src="{{ v.img}}" alt="">
+      <p>Descriçao</p>
+      {{ v.descricao}}
+      <p>Titulo</p>
+      {{ v.titulo}}
+      <p>Horario</p>
+      {{ v.horario}}
+      <p>Local</p>
+      {{v.local}}
+    </li>
+  </ul>
+  
