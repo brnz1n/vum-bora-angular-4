@@ -1,0 +1,34 @@
+<div class="container" align="center">
+
+  <br>
+  <br>
+
+  <div class="z-depth-5" style="width: 400px">
+      <br>
+      <h3>Login</h3>
+      <br>
+      <form #f="ngForm" (submit)="form_submit(f)" style="width:300px">
+          <!--Email-->
+          <input type="email" ngModel name="email" placeholder="Email">
+          <!--Senha-->
+          <input type="password" ngModel name="senha" placeholder="Senha">
+          <!--CheckBox-->
+          <p>
+            <input type="checkbox" id="test5" />
+            <label for="test5">Lembra senha</label>
+          </p>      
+          
+          <br>
+          <br>
+          <!--Enviar-->
+          <button routerLink="/postagems" class="btn waves-effect waves-light" type="submit">Entrar
+              <i class="material-icons right">send</i>
+          </button>
+      </form>
+      <br>
+      <br>
+  </div>
+
+
+
+</div>
