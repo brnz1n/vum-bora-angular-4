@@ -1,7 +1,11 @@
 .nav-wrapper{
-    background-color:rgb(214, 12, 12);
+    background-color:#a50801;
+    margin-top: -70px;
 }
 .page-footer{
-    background-color:rgb(214, 12, 12);
+    background-color:#a50801;
     
+}
+.logo{
+    margin-top: -50px;
 }

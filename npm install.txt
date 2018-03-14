@@ -1,2 +1,11 @@
 npm install firebase --save
+
+
 npm install angularfire2 --save
+
+//materialize
+
+https://www.npmjs.com/package/angular2-materialize
+
+
+

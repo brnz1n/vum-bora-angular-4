@@ -1,25 +1,34 @@
+<!--Cabecario-->
+<div class="logo" align="center">
+  <img src="assets/img/img02.jpg" class="img-responsive" width="100%">
+</div>
 <!--Menu-->
 <nav>
   <div class="nav-wrapper">
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a routerLink="/ver">Inicio</a></li>
-      <li><a routerLink="/cadastro">Cadastro</a></li>
-<<<<<<< HEAD
-      <li><a routerLink="/login">Login</a></li>    
-=======
-      <li><a routerLink="/login">Login</a></li> 
-      <li><a routerLink="/ver">Ver</a></li>      
->>>>>>> 7c83e6c1711cad3f0b21a905c20421eca740e09c
-           
+    <ul id="nav-mobile" class="left hide-on-med-and-down" >
+      <li>
+        <a routerLink="/index">Inicio</a>
+      </li>
+      <li>
+          <a routerLink="">Categorias</a>
+      </li>
+      <li>
+        <a routerLink="/postagems">Postagem</a>
+      </li>
     </ul>
+        <div >
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+                <a routerLink="/cadastro">Cadastro</a>
+              </li>
+              <li >
+                <a  routerLink="">Login</a>
+              </li>
+
+            </ul> 
+        </div>
   </div>
 </nav>
-
-<!--Cabecario-->
-<div class="logo" align="center">
-   <img src="assets/img/img02.jpg" class="img-responsive" width="100%">
- </div>
-
 
 <router-outlet></router-outlet>
 
@@ -27,27 +36,35 @@
 <br>
 <!--Rodapé-->
 <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+          <img src="assets/img/Logo.png" class="img-responsive" width="80%">
+        <h5 class="white-text"></h5>
+        <p class="grey-text text-lighten-4">Site em desenvolvimento...</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Mais...</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-3" href="">Contatos</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="">E-mail</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="">Ajuda</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="">Chat</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
       © 2016 Copyright VumBora!!!
-      <a class="grey-text text-lighten-4 right" href="#!">Mais</a>
-      </div>
     </div>
-  </footer>
+  </div>
+</footer>
